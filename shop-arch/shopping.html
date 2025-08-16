@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shoparch Online</title>
+
+  <!-- Optional: clean Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet (no inline or internal CSS) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header (fixed) -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" class="logo">Shoparch Online</a>
+        <p class="tagline">Your One-Stop Shop for Everything</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero" role="region" aria-label="Promotions">
+    <div class="container hero-content">
+      <h1>MEGA SALE — UP TO 50% OFF!</h1>
+      <p>Hurry! Limited-time deals on top products.</p>
+      <a class="btn btn-primary" href="#products">Shop Now</a>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <!-- Products -->
+    <section id="products" class="section container" aria-labelledby="products-heading">
+      <h2 id="products-heading">Products</h2>
+
+      <div class="product-grid">
+
+        <!-- Card 1 (with Sale ribbon) -->
+        <article class="card">
+          <span class="ribbon" aria-hidden="true">SALE</span>
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop"
+               alt="Black smartwatch with display" loading="lazy">
+          <h3 class="title">Smartwatch</h3>
+          <p class="desc">Smart sensors, clear display, fast sync.</p>
+          <div class="price">Rs2,999</div>
+          <a href="#" class="btn btn-outline">Add to Cart</a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=800&auto=format&fit=crop"
+               alt="White wireless headset" loading="lazy">
+          <h3 class="title">Wireless Headset</h3>
+          <p class="desc">Active noise canceling. Save time, hear more.</p>
+          <div class="price">Rs1,499</div>
+          <a href="#" class="btn btn-outline">Add to Cart</a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1520975922203-bbd35f0d9a2e?q=80&w=800&auto=format&fit=crop"
+               alt="Casual orange t-shirt" loading="lazy">
+          <h3 class="title">Casual T-shirt</h3>
+          <p class="desc">Soft cotton, relaxed fit for everyday use.</p>
+          <div class="price">Rs359</div>
+          <a href="#" class="btn btn-outline">Add to Cart</a>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1520975619011-88c3cec56b54?q=80&w=800&auto=format&fit=crop"
+               alt="Pair of sneakers" loading="lazy">
+          <h3 class="title">Sneakers</h3>
+          <p class="desc">Clean design, comfy sole, street-ready.</p>
+          <div class="price">Rs2,399</div>
+          <a href="#" class="btn btn-outline">Add to Cart</a>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop"
+               alt="Black sunglasses" loading="lazy">
+          <h3 class="title">Sunglasses</h3>
+          <p class="desc">UV protection with a modern frame.</p>
+          <div class="price">Rs799</div>
+          <a href="#" class="btn btn-outline">Add to Cart</a>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop"
+               alt="Slim laptop on desk" loading="lazy">
+          <h3 class="title">Laptop</h3>
+          <p class="desc">Sleek design, powerful performance.</p>
+          <div class="price">Rs79,999</div>
+          <a href="#" class="btn btn-outline">Add to Cart</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section id="offers" class="section special container" aria-labelledby="offers-heading">
+      <h2 id="offers-heading">Special Offer</h2>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="label">Limited Time Offer</span>
+          <img src="https://images.unsplash.com/photo-1510552776732-01acc9a4c637?q=80&w=1200&auto=format&fit=crop"
+               alt="Latest smartphone in hand" loading="lazy">
+          <div class="feature-info">
+            <h3>Smartphone</h3>
+            <p class="big-price">Rs29,999</p>
+            <a class="btn btn-primary" href="#products">Shop Now</a>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <span class="label">Limited Time Offer</span>
+          <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1200&auto=format&fit=crop"
+               alt="Modern notebook on a table" loading="lazy">
+          <div class="feature-info">
+            <h3>Notebook</h3>
+            <p class="big-price">Rs54,999</p>
+            <a class="btn btn-primary" href="#products">Shop Now</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews" class="section container" aria-labelledby="reviews-heading">
+      <h2 id="reviews-heading">Customer Reviews</h2>
+
+      <div class="reviews-grid">
+        <blockquote class="review">
+          <p>“Great products and excellent customer support.”</p>
+          <footer>— Ram C.</footer>
+        </blockquote>
+
+        <blockquote class="review">
+          <p>“I love the quality and fast shipping!”</p>
+          <footer>— Mohan V.</footer>
+        </blockquote>
+
+        <blockquote class="review">
+          <p>“Highly recommend this shop to everyone!”</p>
+          <footer>— Dhalapathy .</footer>
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h3>Contact</h3>
+        <p>Email: support@shoparch.example</p>
+        <p>Phone: +91 7680932549</p>
+      </div>
+
+      <div>
+        <h3>Follow Us</h3>
+        <ul class="social">
+          <li><a href="#" aria-label="Facebook">[f]</a></li>
+          <li><a href="#" aria-label="X / Twitter">[x]</a></li>
+          <li><a href="#" aria-label="Instagram">[ig]</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        © 2025 ShopArch Online. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
