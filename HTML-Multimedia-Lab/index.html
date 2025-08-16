@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Multimedia Lab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    video, audio, embed, iframe, svg {
+      display: block;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      background: white;
+    }
+    .pdf-icon {
+      width: 60px;
+      height: 60px;
+      background: red;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML5 Multimedia Lab</h1>
+  <p>This page demonstrates video, audio, embed (PDF), iframe, and inline SVG.</p>
+
+  <!-- Video Section -->
+  <section>
+    <h2>Video (sivuni_aana_song.mp4)</h2>
+    <video width="400" controls poster="poster.jpg">
+      <source src="sivuni_aana_song.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Audio Section -->
+  <section>
+    <h2>Audio (Sivuni-Aana-MassTamilan.io.mp3)</h2>
+    <audio controls loop>
+      <source src="Sivuni-Aana-MassTamilan.io.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Embed PDF -->
+  <section>
+    <h2>Embed (document.pdf)</h2>
+    <embed src="document.pdf" type="application/pdf" width="400" height="300">
+    <p>If not visible, <a href="document.pdf" download>download document.pdf</a></p>
+  </section>
+
+  <!-- Iframe -->
+  <section>
+    <h2>Iframe (demo.html)</h2>
+    <iframe src="demo.html" width="400" height="200" title="Demo Page"></iframe>
+  </section>
+
+  <!-- Inline SVG -->
+  <section>
+    <h2>Inline SVG</h2>
+    <svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="60" cy="60" r="50" fill="lightblue" stroke="black" stroke-width="2" />
+      <text x="60" y="65" text-anchor="middle" font-size="16" fill="black">SVG</text>
+    </svg>
+  </section>
+
+</body>
+</html>
