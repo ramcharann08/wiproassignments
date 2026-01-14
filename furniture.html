@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Furniture Store Catalog</title>
+
+  <!-- INTERNAL CSS (inside <style>) -->
+  <style>
+    :root{
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --btn: #2563eb;         /* primary blue */
+      --btn-hover: #1e40af;   /* darker blue */
+      --radius: 14px;
+    }
+
+    /* Page */
+    body{
+      margin:0;
+      background: var(--bg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+    }
+
+    /* Header */
+    header{
+      padding: 48px 16px 12px;
+      text-align:center;
+    }
+    header h1{
+      margin:0 0 6px;
+      font-size: clamp(28px, 4vw, 40px);
+      letter-spacing:.3px;
+    }
+    header p{
+      margin:0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* Catalog grid */
+    .catalog{
+      max-width: 1100px;
+      margin: 22px auto 60px;
+      padding: 0 16px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    /* Card layout (border, padding, margin) */
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.04);
+      display:flex;
+      flex-direction:column;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .card:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(0,0,0,.06);
+    }
+
+    /* Image size */
+    .card img{
+      width:100%;
+      height:170px;
+      object-fit:cover;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background:#fafafa;
+    }
+
+    /* Text */
+    .title{
+      margin:12px 0 4px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .desc{
+      margin:0 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height:1.45;
+    }
+    .price{
+      margin: 4px 0 14px;
+      font-weight:700;
+    }
+
+    /* Button + hover effect */
+    .btn{
+      align-self:flex-start;
+      padding:10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--btn);
+      background: var(--btn);
+      color:#fff;
+      font-weight:600;
+      cursor:pointer;
+      transition: background .18s ease, transform .12s ease, box-shadow .18s ease;
+    }
+    .btn:hover{
+      background: var(--btn-hover);
+      box-shadow: 0 6px 14px rgba(37,99,235,.25);
+    }
+    .btn:active{ transform: translateY(1px); }
+
+    /* Small footer note */
+    .note{
+      text-align:center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 22px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with store name + tagline -->
+  <header>
+    <h1>Furniture Store Catalog</h1>
+    <p>Find the best furniture for your home</p>
+  </header>
+
+  <main class="catalog">
+    <section class="grid">
+
+      <!-- Product 1 -->
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=60&auto=format&fit=crop&w=800"
+          alt="Modern gray sofa in a living room" />
+        <h3 class="title">Sofa</h3>
+        <p class="desc">Comfortable and stylish 3-seater sofa with soft fabric.</p>
+        <div class="price">Rs30499</div>
+        <!-- Inline CSS: change THIS button’s style (one specific product) -->
+        <button class="btn" style="background:#0ea5e9; border-color:#0ea5e9;">
+          Buy Now
+        </button>
+      </article>
+
+      <!-- Product 2 -->
+      <!-- Inline CSS: change THIS card’s background color (one specific card) -->
+      <article class="card" style="background:#fffaf0;">
+        <img
+          src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=60&auto=format&fit=crop&w=800"
+          alt="Wooden dining table" />
+        <h3 class="title">Dining Table</h3>
+        <p class="desc">Solid wood dining table—durable and easy to clean.</p>
+        <div class="price">Rs20299</div>
+        <button class="btn">Buy Now</button>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=60&auto=format&fit=crop&w=800"
+          alt="Modern chair" />
+        <!-- Inline CSS: change THIS title’s text color (one specific title) -->
+        <h3 class="title" style="color:#d9480f;">Chair</h3>
+        <p class="desc">Minimal chair—perfect for any room and easy to move.</p>
+        <div class="price">Rs14999</div>
+        <button class="btn">Buy Now</button>
+      </article>
+
+    </section>
+
+    <p class="note">Images are for demo only. Replace with your own if needed.</p>
+  </main>
+
+</body>
+</html>
